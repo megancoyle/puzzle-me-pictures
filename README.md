@@ -11,6 +11,8 @@ After completing a hangman app and a drawing app, I noticed a common thread in t
 
 That being said, I knew that the third interactive app that I wanted to build had to incorporate puzzles somehow.
 
+I started off trying to build the application a couple of different ways in React. I kept running into issues with the canvas element, so given the week timeline for the project, I decided to turn back to Rails to see how I could really fine-tune the application.
+
 ## Planning
 ### Entity Relationship Diagram (ERD)
 ![ERD](planning/erd.jpg)
