@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ /* nav, header styles */
  h1#logo {
    margin: 0;
    display: inline-block;
@@ -36,6 +38,7 @@
    font-size: 1.2em;
    font-weight: 700;
  }
+
  /* Main Content */
  body {
    padding: 0;
@@ -68,7 +71,9 @@
    font-family: sans-serif;
    text-transform: lowercase;
  }
-
+canvas {
+  display: block;
+}
 
  /* Homepage */
  body.welcome {

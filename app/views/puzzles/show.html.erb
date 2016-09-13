@@ -1,6 +1,9 @@
-<h1><%= @puzzle.title %></h1>
+<%= javascript_tag do %>
+  window.mapImg = '<%= raw @puzzle.image %>';
+<% end %>
 
-<img src="<%= @puzzle.image %>">
+<h1><%= @puzzle.title %></h1>
+<canvas id="canvas"></canvas>
 
 <%= link_to 'Back', puzzles_path %>
 <%= link_to 'Edit', edit_puzzle_path(@puzzle) %>
