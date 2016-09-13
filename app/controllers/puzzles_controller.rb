@@ -12,6 +12,10 @@ class PuzzlesController < ApplicationController
     @puzzle = Puzzle.new
   end
 
+  def edit
+    @puzzle = Puzzle.find(params[:id])
+  end
+
   def create
     @puzzle = Puzzle.new(puzzle_params)
 
@@ -19,6 +23,16 @@ class PuzzlesController < ApplicationController
       redirect_to @puzzle
     else
       render 'new'
+    end
+  end
+
+  def update
+    @puzzle = Puzzle.find(params[:id])
+
+    if @puzzle.update(puzzle_params)
+      redirect_to @puzzle
+    else
+      render 'edit'
     end
   end
 
