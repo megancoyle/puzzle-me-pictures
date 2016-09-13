@@ -13,3 +13,247 @@
  *= require_tree .
  *= require_self
  */
+ h1#logo {
+   margin: 0;
+   display: inline-block;
+ }
+ #logo a {
+   color: black;
+   text-decoration: none;
+   font-size: 1.1em;
+   text-transform: lowercase;
+ }
+ nav {
+   float: right;
+   padding-top: 20px;
+   font-family: sans-serif;
+   text-transform: lowercase;
+ }
+ nav a {
+   color: black;
+   text-decoration: none;
+   padding: 10px;
+   font-size: 1.2em;
+   font-weight: 700;
+ }
+ /* Main Content */
+ body {
+   padding: 0;
+   margin: 0;
+   background: url('/images/puzzles.jpg');
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   font-family: sans-serif;
+ }
+ .content {
+   background: rgba(255,255,255,0.8);
+   padding: 20px;
+   margin-top: 15px;
+   min-height: 500px;
+ }
+ .container {
+   max-width: 950px;
+   margin: 0 auto;
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+ a {
+   text-decoration: none;
+ }
+ h1, h2, h3, h4, h5 {
+   font-family: sans-serif;
+   text-transform: lowercase;
+ }
+
+
+ /* Homepage */
+ body.welcome {
+   background: url('/images/puzzles.jpg');
+   background-repeat: no-repeat;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+ }
+ .welcome h2 {
+   font-size: 3.2em;
+   padding: 0;
+   margin: 0;
+   font-weight: 300;
+ }
+ .welcome h3 {
+   font-size: 2.6em;
+   padding: 0;
+   margin: 0;
+   font-weight: 300;
+ }
+ .welcome .content {
+     background: transparent;
+ }
+ .banner {
+   max-width: 600px;
+   margin: auto;
+   margin-top: 14%;
+   text-align: center;
+ }
+
+
+ /* Note Page */
+ .detail-page {
+   max-width: 600px;
+   margin: auto;
+ }
+
+ /* Puzzle Grid */
+ .puzzle-grid img {
+   width: 100%;
+   max-width: 250px;
+ }
+
+ .puzzle-grid {
+   display: inline-block;
+   vertical-align: top;
+   margin: 10px;
+ }
+
+ .puzzle-grid p {
+     margin-top: -10px;
+ }
+
+ .puzzle-grid h3 {
+     font-size: 20px;
+     margin-top: -10px;
+ }
+ .puzzle-grid a {
+   color: black;
+ }
+ .puzzle-grid a:hover {
+   opacity: .8;
+ }
+
+ .all-puzzles {
+   text-align: center;
+   padding-top: 50px;
+ }
+
+ /* Notes */
+ .note {
+   max-width: 600px;
+   margin: auto;
+   border-bottom: 1px solid #b3b3b3;
+ }
+
+ /* Get Started Button */
+ a.get-started {
+   border: 1px solid #003366;
+   box-sizing: border-box;
+   font-family: inherit;
+   font-weight: 300;
+   letter-spacing: 1px;
+   margin-left: 0.5em;
+   outline: medium none;
+   padding: 0.5em 0.6em;
+   text-align: center;
+   text-decoration: none;
+   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
+   transition: all 0.2s ease 0s;
+   vertical-align: middle;
+   color: #003366;
+   width: 250px;
+   display: block;
+   margin: 0 auto;
+ }
+ a.get-started:hover {
+   background: #003366;
+   border: 1px solid #003366;
+   color: white;
+ }
+
+ /* Form Styling */
+ .form-block {
+   max-width: 500px;
+   padding: 20px;
+   margin: 0 auto;
+ }
+ .form-block input, .form-block select {
+   height: 30px;
+ }
+ .form-block textarea {
+   height: 60px;
+ }
+
+ .form-block input, .form-block textarea, .form-block select {
+     width: 100%;
+     border: 1px solid #ff8080;
+     padding: 0 10px;
+     margin-top: 10px;
+     font-size: 14px;
+     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+ }
+
+ .form-block input[type="submit"] {
+   border: 1px solid white;
+   font-weight: 300;
+   letter-spacing: 1px;
+   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
+   transition: all 0.2s ease 0s;
+   background: #003366;
+   color: white;
+   padding: 0 10px 0 10px;
+   width: auto;
+   min-width: 250px;
+   cursor: pointer;
+ }
+ .form-block input[type="submit"]:hover {
+   background: #003366;
+   border: 1px solid #003366;;
+   color: white;
+ }
+
+ .form-block input[type='checkbox'] {
+   width: auto;
+ }
+ .form-block .field {
+     margin-bottom: 15px;
+ }
+
+
+ /* Notification Messages */
+ .flash {
+   border-bottom: 1px solid black;
+   padding: 1em;
+ }
+
+ .alert  { color: red;  }
+ .notice { color: blue; }
+ #error_explanation {
+   color: red;
+ }
+
+ /* Favoriting */
+ a.fav {
+   text-decoration: none;
+   color: red;
+   padding-left: 10px;
+ }
+
+ a.no-fav {
+   text-decoration: none;
+   color: grey;
+   padding-left: 10px;
+ }
+
+ .fav:visited, .no-fav:visited {
+   text-decoration: none;
+ }
+
+ /* Styles for mobile devices */
+ @media (max-width: 900px) {
+
+ }

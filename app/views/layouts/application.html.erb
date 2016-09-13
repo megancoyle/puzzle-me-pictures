@@ -7,8 +7,20 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body>
-    <%= yield %>
+  <header>
+      <div class="container">
+          <h1 id="logo"><%= link_to 'Puzzle Me Pictures', root_path %></h1>
+          <nav>
+            <%= link_to 'Puzzles', puzzles_path %>
+            <%= link_to 'Make + Share', new_puzzle_path %>
+          </nav>
+      </div>
+  </header>
+  <body class="<%= controller_name %> <%= action_name %>">
+    <div class="container">
+      <div class="content">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
