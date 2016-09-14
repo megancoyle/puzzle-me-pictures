@@ -101,6 +101,25 @@ canvas {
  .welcome .content {
      background: transparent;
  }
+ /* SVG Animation */
+ .path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+svg {
+    margin-top: -15px;
+    padding-left: 45px;
+}
  .banner {
    max-width: 600px;
    margin: auto;
