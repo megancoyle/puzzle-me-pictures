@@ -3,6 +3,5 @@
 <% end %>
 <h1><%= @puzzle.title %></h1>
 <canvas id="canvas"></canvas>
-<%= link_to 'Back', puzzles_path %>
 <%= link_to 'Edit', edit_puzzle_path(@puzzle) %>
 <%= link_to 'Delete', puzzle_path(@puzzle), method: :delete %>
