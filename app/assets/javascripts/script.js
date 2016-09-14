@@ -1,5 +1,4 @@
 $(".puzzles.show").ready(function() {
-  console.log('load')
   // on page load, trigger init function
   window.onload = function() {
     init();
@@ -7,10 +6,8 @@ $(".puzzles.show").ready(function() {
 
   var puzzleDifficulty = 4;
   var puzzleHover = '#006699';
-
   var stage;
   var puzzleCanvas;
-
   var puzzleImage;
   var pieces;
   var puzzleWidth;
@@ -19,15 +16,21 @@ $(".puzzles.show").ready(function() {
   var pieceHeight;
   var currentPiece;
   var currentDropPiece;
-
   var mouse;
 
   // init function, loads image
   function init(){
       puzzleImage = new Image();
-      puzzleImage.addEventListener('load', onImage, false);
+      puzzleImage.addEventListener('load',onImage,false);
       puzzleImage.src = window.mapImg;
+  }
 
+  function getMousePosition(canvas, evt) {
+      var rect = canvas.getBoundingClientRect();
+      return {
+        x: evt.clientX - rect.left,
+        y: evt.clientY - rect.top
+      };
   }
   // sets puzzle piece sizes based on difficulty
   function onImage(e){
@@ -53,7 +56,6 @@ $(".puzzles.show").ready(function() {
       currentPiece = null;
       currentDropPiece = null;
       stage.drawImage(puzzleImage, 0, 0, puzzleWidth, puzzleHeight, 0, 0, puzzleWidth, puzzleHeight);
-      // createTitle("Click to Start");
       buildPieces();
   }
 
@@ -74,8 +76,6 @@ $(".puzzles.show").ready(function() {
               yPos += pieceHeight;
           }
       }
-      // code below is used for a click event to start puzzle
-      // document.onmousedown = shufflePuzzle;
 
       // shuffles puzzle on view
       shufflePuzzle();
