@@ -3,8 +3,15 @@
 ## Overview
 puzzle me pictures is an app that allows users to upload images, convert them into puzzles, and then send their puzzles to their friends. The puzzles must be completed in order to see the images. Users can adjust the difficulty of the puzzles.
 
+[![Screenshot](screenshot.png)](https://puzzle-me-pictures.herokuapp.com/)
+
+[View the Deployed App](https://puzzle-me-pictures.herokuapp.com/)
+
 ## Technologies Used
-* HTML5 Canvas & JavaScript
+* [Ruby on Rails](http://rubyonrails.org/): web application framework used for the app
+* [Devise](https://github.com/plataformatec/devise): user authentication
+* HTML5 Canvas & JavaScript: ability to create puzzles and drag and drop functionality to piece together shuffled puzzles
+* [Heroku](http://www.heroku.com/): hosting the deployed app
 
 ## Approach
 After completing a hangman app and a drawing app, I noticed a common thread in the work that I'm passionate about - and that's building interactive web applications. In all cases, it just so happens that the interactivity is added with HTML5 Canvas.
