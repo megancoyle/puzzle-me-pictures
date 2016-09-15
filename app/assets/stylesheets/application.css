@@ -209,7 +209,7 @@ svg {
    max-width: 500px;
    padding: 20px;
    margin: 0 auto;
-   background: #0066cc;
+   /*background: #0066cc;*/
    margin-top: 30px;
  }
  .form-block input, .form-block select {
@@ -221,7 +221,7 @@ svg {
 
  .form-block input, .form-block textarea, .form-block select {
      width: 100%;
-     border: 1px solid white;
+     border: 1px solid #0073e6;
      padding: 0 10px;
      margin-top: 10px;
      font-size: 14px;
