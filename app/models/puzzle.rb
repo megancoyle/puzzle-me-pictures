@@ -3,5 +3,5 @@ class Puzzle < ApplicationRecord
   validates :title, presence: true,
                       length: { minimum: 5 }
   validates :image, file_size: { less_than_or_equal_to: 200.kilobytes },
-            file_content_type: { allow: ['image/jpeg', 'image/png'] }
+            file_content_type: { allow: ['image/jpeg', 'image/jpg', 'image/png'] }
 end
