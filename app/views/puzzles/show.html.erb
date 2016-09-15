@@ -2,4 +2,4 @@
   window.mapImg = '<%= raw @puzzle.image %>';
 <% end %>
 <center><canvas id="canvas"></canvas>
-<p><%= @puzzle.title %> // <%= link_to 'Edit', edit_puzzle_path(@puzzle) %> // <%= link_to 'Delete', puzzle_path(@puzzle), method: :delete %></p></center>
+<p>Title: <%= @puzzle.title %> // <%= link_to ' Edit', edit_puzzle_path(@puzzle), :class => 'fa fa-pencil' %> // <%= link_to ' Delete', puzzle_path(@puzzle), method: :delete, :class => 'fa fa-trash-o' %></p></center>
