@@ -4,7 +4,7 @@ $(".puzzles.show").ready(function() {
     init();
   };
 
-  var difficulty = 4;
+  var difficulty = window.level;
   var hover = '#006699';
   var puzzleCanvas;
   var stage;
