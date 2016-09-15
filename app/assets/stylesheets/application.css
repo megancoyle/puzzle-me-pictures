@@ -102,6 +102,14 @@ canvas {
  .welcome .content {
   background: transparent;
  }
+ /* page graphics */
+ .main-icon {
+   display: block;
+   width: 120px;
+   margin: 0 auto;
+   margin-top: 20px;
+   margin-bottom: -20px;
+ }
  /* SVG Animation */
  .path {
   stroke-dasharray: 1000;
@@ -210,7 +218,7 @@ svg {
    padding: 20px;
    margin: 0 auto;
    /*background: #0066cc;*/
-   margin-top: 30px;
+   /*margin-top: 30px;*/
  }
  .form-block input, .form-block select {
    height: 30px;
