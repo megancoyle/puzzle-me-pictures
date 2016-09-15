@@ -71,6 +71,7 @@
  }
  h1, h2, h3, h4, h5 {
    text-transform: lowercase;
+   text-align: center;
  }
 canvas {
   padding-top: 50px;
@@ -99,7 +100,7 @@ canvas {
    font-weight: 300;
  }
  .welcome .content {
-     background: transparent;
+  background: transparent;
  }
  /* SVG Animation */
  .path {
@@ -123,7 +124,7 @@ svg {
  .banner {
    max-width: 600px;
    margin: auto;
-   margin-top: 14%;
+   margin-top: 8%;
    text-align: center;
  }
 
@@ -141,7 +142,9 @@ svg {
    border-top: 5px solid black;
    border-bottom: 5px solid black;
  }
-
+ .grid-content {
+   text-align: center;
+ }
  .puzzle-grid {
    display: inline-block;
    vertical-align: top;
@@ -206,6 +209,8 @@ svg {
    max-width: 500px;
    padding: 20px;
    margin: 0 auto;
+   background: #0066cc;
+   margin-top: 30px;
  }
  .form-block input, .form-block select {
    height: 30px;
@@ -216,7 +221,7 @@ svg {
 
  .form-block input, .form-block textarea, .form-block select {
      width: 100%;
-     border: 1px solid #ff8080;
+     border: 1px solid white;
      padding: 0 10px;
      margin-top: 10px;
      font-size: 14px;
@@ -261,7 +266,7 @@ svg {
  .alert  { color: red;  }
  .notice { color: blue; }
  #error_explanation {
-   color: red;
+   color: #ff99ff;
  }
 
  /* Favoriting */

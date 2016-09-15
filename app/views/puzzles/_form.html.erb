@@ -3,8 +3,7 @@
   <% if @puzzle.errors.any? %>
     <div id="error_explanation">
       <h2>
-        <%= pluralize(@puzzle.errors.count, "error") %> prohibited
-        this puzzle from being saved:
+        <%= pluralize(@puzzle.errors.count, "error") %> - Please Fix to Continue:
       </h2>
       <ul>
         <% @puzzle.errors.full_messages.each do |msg| %>
@@ -20,7 +19,7 @@
   </p>
 
   <p>
-    <%= f.label :image %><br>
+    <%= f.label :image, 'Image (no bigger than 200kb)'%><br>
     <%= f.file_field :image%>
   </p>
 
