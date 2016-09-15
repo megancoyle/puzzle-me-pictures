@@ -46,6 +46,10 @@
    font-size: 1.1em;
    font-weight: 700;
  }
+ nav a:hover {
+   color: white;
+   opacity: .8;
+ }
 
  /* Main Content */
  body {
