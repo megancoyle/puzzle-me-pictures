@@ -1,7 +1,7 @@
 <%= javascript_tag do %>
   window.mapImg = '<%= raw @puzzle.image %>';
 <% end %>
+<center><canvas id="canvas"></canvas>
 <h1><%= @puzzle.title %></h1>
-<canvas id="canvas"></canvas>
 <%= link_to 'Edit', edit_puzzle_path(@puzzle) %>
-<%= link_to 'Delete', puzzle_path(@puzzle), method: :delete %>
+<%= link_to 'Delete', puzzle_path(@puzzle), method: :delete %></center>
