@@ -39,6 +39,7 @@ I started off trying to build the application a couple of different ways in Reac
 [View more User Stories](planning/user_stories.md)
 
 ## Installation
+If running locally, you will need an AWS key for uploading images with CarrierWave.
 
 ## Unsolved Problems/Next Steps
 * Make the puzzle pieces jigsaw-shaped instead of rectangles
