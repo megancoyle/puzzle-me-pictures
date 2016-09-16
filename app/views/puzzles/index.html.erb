@@ -3,7 +3,7 @@
     <img src="/images/puzzle-piece.png" class="main-icon" >
     <h1>All the Puzzles</h1>
     <div class="grid-content">
-      <% @puzzles.each do |puzzle| %>
+      <% @puzzles.sort { |a,b| a.title <=> b.title }.each do |puzzle| %>
         <div class="puzzle-grid">
           <h2><%= link_to puzzle.title, puzzle_path(puzzle) %></h2>
           <%= link_to (image_tag puzzle.image), puzzle_path(puzzle) %>
