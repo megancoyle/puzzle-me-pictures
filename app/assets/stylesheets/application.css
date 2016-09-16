@@ -299,10 +299,15 @@ svg {
    padding: 1em;
  }
 
- .alert  { color: red;  }
- .notice { color: blue; }
+ .alert  {
+   color: red;
+   text-align: center;
+ }
+ .notice {
+   color: blue;
+ }
  #error_explanation {
-   color: #ff99ff;
+   color: red;
  }
 
  /* Favoriting */
