@@ -1,6 +1,8 @@
 <%= javascript_tag do %>
   window.mapImg = '<%= raw @puzzle.image %>';
-  window.level = '<%= raw @puzzle.difficulty %>'
+  window.level = '<%= raw @puzzle.difficulty %>';
+  window.puzzleTitle = '<%= raw @puzzle.title %>';
 <% end %>
 <center><canvas id="canvas"></canvas>
 <p>Title: <%= @puzzle.title %> // <%= link_to ' Edit', edit_puzzle_path(@puzzle), :class => 'fa fa-pencil' %> // <%= link_to ' Delete', puzzle_path(@puzzle), method: :delete, :class => 'fa fa-trash-o' %></p></center>
+<div id="winning"></div>

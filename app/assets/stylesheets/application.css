@@ -197,6 +197,16 @@ svg {
    padding-top: 50px;
  }
 
+ #winning {
+   text-align: center;
+ }
+ #winning p {
+   color: #004d99;
+ }
+ #winning:hover {
+   cursor: pointer;
+ }
+
  /* Notes */
  .note {
    max-width: 600px;

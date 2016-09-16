@@ -17,6 +17,7 @@ $(".puzzles.show").ready(function() {
   var currentPiece;
   var currentDropPiece;
   var playerMouse;
+  var winning = document.getElementById('winning');
 
   // set offset for cross-browser support
   function getOffset(element, ancestor) {
@@ -67,6 +68,7 @@ $(".puzzles.show").ready(function() {
   }
   // draws image on canvas
   function initPuzzle(){
+      winning.innerHTML = '';
       pieces = [];
       playerMouse = {x:0,y:0};
       currentPiece = null;
@@ -212,16 +214,31 @@ $(".puzzles.show").ready(function() {
           }
       }
       if(gameWin){
-        alert("you win!");
-        setTimeout(gameOver,500);
+        var title = window.puzzleTitle
+        endScreen("Completed " + title);
+        winning.innerHTML = "<p id='again'>Play again?</p>"
+        document.getElementById('again').addEventListener('click', initPuzzle)
       }
+  }
+
+  function endScreen(msg){
+          stage.fillStyle = "#000000";
+          stage.globalAlpha = .9;
+          stage.fillRect(100,puzzleHeight - 40,puzzleWidth - 200,40);
+          stage.fillStyle = "#6666ff";
+          stage.globalAlpha = 1;
+          stage.textAlign = "center";
+          stage.textBaseline = "middle";
+          stage.font = "15px Arial";
+          stage.fillText(msg,puzzleWidth / 2,puzzleHeight - 20);
+          gameOver();
   }
 
   function gameOver(){
       document.onmousedown = null;
       document.onmousemove = null;
       document.onmouseup = null;
-      initPuzzle();
+      // initPuzzle();
   }
 
 });
