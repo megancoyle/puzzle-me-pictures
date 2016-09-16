@@ -45,3 +45,4 @@ I started off trying to build the application a couple of different ways in Reac
 * Add the ability to favorite puzzles and add view that shows a user's favorites
 * Ability for users to exclude puzzles from the main layout view
 * Make puzzle functionality mobile-friendly
+* On completing a puzzle, add button that automatically downloads the image for the user
