@@ -19,8 +19,8 @@
   </p>
 
   <p>
-    <%= f.label :difficulty, 'Difficulty Level (3 - 20)' %><br>
-    <%= f.range_field :difficulty, :min=>3, :max=>20 %>
+    <%= f.label :difficulty, 'Difficulty Level (3 - 20)', :id=>"range-text" %><br>
+    <%= f.range_field :difficulty, :min=>3, :max=>20, :id=>"range-value"%>
   </p>
 
   <p>
