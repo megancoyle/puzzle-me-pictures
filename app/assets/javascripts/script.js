@@ -225,7 +225,7 @@ $(".puzzles.show").ready(function() {
           stage.fillStyle = "#000000";
           stage.globalAlpha = .9;
           stage.fillRect(100,puzzleHeight - 40,puzzleWidth - 200,40);
-          stage.fillStyle = "#6666ff";
+          stage.fillStyle = "#FFFFFF";
           stage.globalAlpha = 1;
           stage.textAlign = "center";
           stage.textBaseline = "middle";
