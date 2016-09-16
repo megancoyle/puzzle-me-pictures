@@ -12,7 +12,7 @@ puzzle me pictures is an app that allows users to upload images, convert them in
 * [Devise](https://github.com/plataformatec/devise): user authentication
 * HTML5 Canvas & JavaScript: ability to create puzzles and drag and drop functionality to piece together shuffled puzzles
 * [CarrierWave](https://github.com/carrierwaveuploader/carrierwave): gem for file uploads
-* [RMagick](https://rmagick.github.io/) and [MiniMagick](https://github.com/minimagick/minimagick) for resizing image uploads
+* [RMagick](https://rmagick.github.io/) and [MiniMagick](https://github.com/minimagick/minimagick): for resizing image uploads
 * [File Validators](https://github.com/musaffa/file_validators): gem for validating file size
 * [AWS](https://aws.amazon.com/): file storage for image uploads
 * [Heroku](http://www.heroku.com/): hosting the deployed app
