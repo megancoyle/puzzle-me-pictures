@@ -9,6 +9,7 @@
           <%= link_to (image_tag puzzle.image), puzzle_path(puzzle) %>
         </div>
       <% end %>
-    </dive>
+      <%= will_paginate @posts %>
+    </div>
   </div>
 </div>

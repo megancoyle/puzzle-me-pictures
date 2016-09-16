@@ -1,7 +1,7 @@
 class PuzzlesController < ApplicationController
   before_action :authenticate_user!, :except => [:index, :show]
   def index
-    @puzzles = Puzzle.all
+    @puzzles = Puzzle.order("title").page(params[:page]).per_page(3)
   end
 
   def show

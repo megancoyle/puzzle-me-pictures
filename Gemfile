@@ -26,6 +26,7 @@ gem 'devise'
 gem 'file_validators'
 gem 'rmagick', '~> 2.15', '>= 2.15.2'
 gem "mini_magick"
+gem 'will_paginate', '~> 3.1.0'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
