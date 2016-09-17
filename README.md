@@ -43,7 +43,8 @@ If running locally, you will need an AWS key for uploading images with CarrierWa
 
 ## Unsolved Problems/Next Steps
 * Make the puzzle pieces jigsaw-shaped instead of rectangles
-* Add user roles, regular users and admins (regular users can only delete/edit what they've created)
+* Add user roles, regular users and admins
+* Add ability for regular users to delete/edit only what they've created
 * Add the ability to favorite puzzles and add view that shows a user's favorites
 * Ability for users to exclude puzzles from the main layout view
 * Make puzzle functionality mobile-friendly
