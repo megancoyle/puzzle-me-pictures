@@ -4,5 +4,5 @@
   window.puzzleTitle = '<%= raw @puzzle.title %>';
 <% end %>
 <center><canvas id="canvas"></canvas>
-<p>Title: <%= @puzzle.title %> <% if @puzzle.user.id == current_user.id %>// <%= link_to ' Edit', edit_puzzle_path(@puzzle), :class => 'fa fa-pencil' %> // <%= link_to ' Delete', puzzle_path(@puzzle), method: :delete, :class => 'fa fa-trash-o' %><% end %></p></center>
+<p>Title: <%= @puzzle.title %> <% if @puzzle.user.id == current_user.id %>// <%= link_to ' Edit', edit_puzzle_path(@puzzle), :class => 'fa fa-pencil' %> // <%= link_to ' Delete', puzzle_path(@puzzle), method: :delete, :class => 'fa fa-trash-o' %><% end %><% if current_user.admin? %>// <%= link_to ' Edit', edit_puzzle_path(@puzzle), :class => 'fa fa-pencil' %> // <%= link_to ' Delete', puzzle_path(@puzzle), method: :delete, :class => 'fa fa-trash-o' %><% end %></p></center>
 <div id="winning"></div>
