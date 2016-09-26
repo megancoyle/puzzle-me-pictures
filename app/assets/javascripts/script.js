@@ -153,21 +153,8 @@ $(".puzzles.show").ready(function() {
           stage.drawImage(puzzleImage, currentPiece.sx, currentPiece.sy, pieceWidth, pieceHeight, playerMouse.x - (pieceWidth / 2), playerMouse.y - (pieceHeight / 2), pieceWidth, pieceHeight);
           stage.restore();
           document.body.addEventListener('touchmove', updatePuzzle);
-          document.body.addEventListener('touchend', pieceTouchDropped);
+          document.body.addEventListener('touchend', pieceDropped);
       }
-  }
-
-  function pieceTouchDropped(e){
-      document.ontouchmove = null;
-      document.ontouchend = null;
-      if(currentDropPiece != null){
-          var tmp = {xPos:currentPiece.xPos,yPos:currentPiece.yPos};
-          currentPiece.xPos = currentDropPiece.xPos;
-          currentPiece.yPos = currentDropPiece.yPos;
-          currentDropPiece.xPos = tmp.xPos;
-          currentDropPiece.yPos = tmp.yPos;
-      }
-      resetPuzzleAndCheckWin();
   }
 
 
