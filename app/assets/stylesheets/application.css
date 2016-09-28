@@ -89,9 +89,8 @@
  }
 canvas {
   padding-top: 50px;
-}
-canvas#canvas {
-    max-width: 800px;
+  width: 100%;
+  max-width: 800px;
 }
 p.intro {
     font-size: 1.2em;
