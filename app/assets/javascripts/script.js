@@ -46,8 +46,12 @@ $(".puzzles.show").ready(function() {
   // init function, loads image
   function init(){
       puzzleImage = new Image();
-      puzzleImage.addEventListener('load',onImage,false);
+      puzzleImage.addEventListener('load', onImage, false);
       puzzleImage.src = window.mapImg;
+      // make puzzle width work properly for smaller devices
+      if (puzzleImage.width > window.innerWidth) {
+        puzzleImage.width = window.innerWidth;
+      }
   }
   // sets puzzle piece sizes based on difficulty
   function onImage(e){
@@ -58,6 +62,7 @@ $(".puzzles.show").ready(function() {
       setCanvas();
       initPuzzle();
   }
+
   // sets canvas for script
   function setCanvas(){
       puzzleCanvas = document.getElementById('canvas');
