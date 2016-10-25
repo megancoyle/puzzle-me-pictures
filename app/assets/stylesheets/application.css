@@ -51,6 +51,45 @@
    opacity: .8;
  }
 
+/* Mobile Menu */
+.mobile-icon, .mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 620px) {
+  /* Mobile Menu Styles */
+
+	.mobile-icon {
+		display: block;
+		}
+	.mobile-icon img {
+    	float: right;
+    	height: 50px;
+    	margin-top: -65px;
+    	padding-right: 20px;
+    	width: 30px;
+	}
+	.mobile-menu a {
+    color: white;
+	  text-transform: lowercase;
+    display: block;
+    clear: both;
+	}
+	.mobile-navigation {
+		background-color: #333333;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 10px;
+	}
+
+  .main-nav {
+    display: none;
+  }
+
+}
+
  /* Main Content */
  body {
    padding: 0;

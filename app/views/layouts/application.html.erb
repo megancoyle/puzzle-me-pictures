@@ -11,7 +11,7 @@
   <header>
       <div class="container">
           <h1 id="logo"><%= link_to 'Puzzle Me Pictures', root_path %></h1>
-          <nav>
+          <nav class="main-nav">
             <%= link_to 'Puzzles', puzzles_path %>
             <%= link_to 'Make + Share', new_puzzle_path %>
             <% if user_signed_in? %>
@@ -23,6 +23,20 @@
             <% end %>
           </nav>
       </div>
+      <div class="mobile-icon"><a href="#"><img src="/images/menu.png"></a></div>
+            <div class="mobile-menu">
+              <nav class="mobile-navigation">
+                <%= link_to 'Puzzles', puzzles_path %>
+                <%= link_to 'Make + Share', new_puzzle_path %>
+                <% if user_signed_in? %>
+                  <%= link_to 'Profile', edit_user_registration_path, :class => 'navbar-link' %>
+                  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+                <% else %>
+                  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %>
+                  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+                <% end %>
+              </nav>
+            </div>
   </header>
   <body class="<%= controller_name %> <%= action_name %>">
     <div class="container">
