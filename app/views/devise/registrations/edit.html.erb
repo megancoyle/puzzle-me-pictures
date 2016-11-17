@@ -2,7 +2,10 @@
   <div class="content">
     <div class="form-block">
       <img src="/images/profile.png" class="main-icon" >
-      <h1>Edit <%= resource_name.to_s.humanize %></h1>
+      <h1>Profile</h1>
+      <center><%= link_to "See your puzzles", creates_path %></center>
+
+      <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
         <%= devise_error_messages! %>
