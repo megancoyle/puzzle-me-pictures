@@ -3,9 +3,7 @@
 ## Overview
 puzzle me pictures is an app that allows users to upload images, convert them into puzzles, and then send their puzzles to their friends. The puzzles must be completed in order to see the images. Users can adjust the difficulty of the puzzles.
 
-[![Screenshot](screenshot.png)](https://puzzle-me-pictures.herokuapp.com/)
-
-[View the Deployed App](https://puzzle-me-pictures.herokuapp.com/)
+![Screenshot](screenshot.png)]
 
 ## Technologies Used
 * [Ruby on Rails](http://rubyonrails.org/): web application framework used for the app
@@ -14,7 +12,6 @@ puzzle me pictures is an app that allows users to upload images, convert them in
 * [CarrierWave](https://github.com/carrierwaveuploader/carrierwave): gem for file uploads
 * [RMagick](https://rmagick.github.io/) and [MiniMagick](https://github.com/minimagick/minimagick): for resizing image uploads
 * [File Validators](https://github.com/musaffa/file_validators): gem for validating file size
-* [AWS](https://aws.amazon.com/): file storage for image uploads
 * [Heroku](http://www.heroku.com/): hosting the deployed app
 
 ## Approach
@@ -42,6 +39,7 @@ I started off trying to build the application a couple of different ways in Reac
 If running locally, you will need an AWS key for uploading images with CarrierWave.
 
 ## Unsolved Problems/Next Steps
+* Find a different way to upload and store images for free (an AWS replacement)
 * Make the puzzle pieces jigsaw-shaped instead of rectangles
 * Add the ability to favorite puzzles and add view that shows a user's favorites
 * Add view where user can see all the puzzles that they've created
