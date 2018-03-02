@@ -1,0 +1,5 @@
+# Add configuration values here, as shown below.
+
+aws_access_key_id: 'add_id_here'
+aws_secret_access_key: 'add_key_here'
+aws_bucket: 'add_bucket_name_here'
