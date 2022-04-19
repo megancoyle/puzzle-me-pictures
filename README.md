@@ -38,6 +38,14 @@ I started off trying to build the application a couple of different ways in Reac
 ## Installation
 If running locally, you will need an AWS key for uploading images with CarrierWave.
 
+To run locally:
+
+- `bundle install` to install dependencies
+- `bundle e rails db:setup` to setup the database
+- `bundle e rails db:migrate` if there are any pending migrations
+- `brew services start postgresql`
+- `bundle e rails s` to start the server locally
+
 ## Unsolved Problems/Next Steps
 * Find a different way to upload and store images for free (an AWS replacement)
 * Make the puzzle pieces jigsaw-shaped instead of rectangles
