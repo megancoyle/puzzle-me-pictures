@@ -3,7 +3,7 @@
 ## Overview
 puzzle me pictures is an app that allows users to upload images, convert them into puzzles, and then send their puzzles to their friends. The puzzles must be completed in order to see the images. Users can adjust the difficulty of the puzzles.
 
-![Screenshot](screenshot.png)]
+![Screenshot](screenshot.png)
 
 ## Technologies Used
 * [Ruby on Rails](http://rubyonrails.org/): web application framework used for the app
